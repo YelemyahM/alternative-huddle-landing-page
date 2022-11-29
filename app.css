@@ -47,7 +47,7 @@ header {
   box-shadow: 1px 1px 5px lightslategrey;
 }
 
-.btn:hoover {
+.btn:hover {
   cursor: pointer;
 }
 
@@ -66,6 +66,11 @@ header {
   background: hsl(322, 100%, 66%);
   color: #fff;
   margin: 0 auto;
+}
+
+.get-started-btn:hover {
+  transition: .3s;
+  background: #ff80d0;
 }
 
 .main {
@@ -90,6 +95,12 @@ header {
   height: 30px;
   font-size: 0.7rem;
   background: #fff;
+  color:  hsl(192, 100%, 9%);
+}
+
+.top-btn:hover {
+  transition: .3s;
+  color: #005a70;
 }
 
 .header-body img {
@@ -128,7 +139,7 @@ header {
 .last-section {
   padding-left: 10px !important;
   padding-right: 10px !important;
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
   background: #fff;
   bottom: -100px;
@@ -235,12 +246,12 @@ header {
 .fb svg:hover path,
 .twi svg:hover path,
 .ig svg:hover stroke {
-  transition: .3S;
+  transition: 0.3s;
   fill: hsl(322, 100%, 66%);
 }
 
 .contact .copyrigth {
-  font-size: .7rem;
+  font-size: 0.7rem;
   display: block;
   width: 236px;
   margin: 0 auto;
