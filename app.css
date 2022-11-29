@@ -57,7 +57,6 @@ header {
   display: flex;
   padding: 50px 30px 30px 30px;
   margin-bottom: 40px;
-  width: 335px;
 }
 
 .get-started-btn {
@@ -76,6 +75,7 @@ header {
 .main {
   margin: 0 auto;
   width: 335px;
+  position: relative;
 }
 
 .header-top {
@@ -139,7 +139,7 @@ header {
 .last-section {
   padding-left: 10px !important;
   padding-right: 10px !important;
-  margin-top: 50px;
+  margin-top: -30px;
   position: relative;
   background: #fff;
   bottom: -100px;
@@ -255,4 +255,10 @@ header {
   display: block;
   width: 236px;
   margin: 0 auto;
+}
+
+@media screen and (max-width : 375px) {
+  .main {
+    width: 90%;
+  }
 }
