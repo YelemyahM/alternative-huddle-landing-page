@@ -68,7 +68,7 @@ header {
 }
 
 .get-started-btn:hover {
-  transition: .3s;
+  transition: 0.3s;
   background: #ff80d0;
 }
 
@@ -95,11 +95,11 @@ header {
   height: 30px;
   font-size: 0.7rem;
   background: #fff;
-  color:  hsl(192, 100%, 9%);
+  color: hsl(192, 100%, 9%);
 }
 
 .top-btn:hover {
-  transition: .3s;
+  transition: 0.3s;
   color: #005a70;
 }
 
@@ -165,9 +165,8 @@ header {
   margin-bottom: 50px;
 }
 
-.infos .footer-logo {
-  width: 100px;
-  height: 17px;
+.footer-logo {
+  width: 150px;
   margin-bottom: 20px;
 }
 
@@ -238,9 +237,20 @@ header {
   margin-bottom: 20px;
 }
 
+.socials img:hover {
+  cursor: pointer;
+  color: red;
+}
+
 .socials .twi {
+  height: 49px;
+  align-self: center;
   margin-left: 15px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.socials .ig {
+  height: 57px;
 }
 
 .fb svg:hover path,
@@ -257,8 +267,150 @@ header {
   margin: 0 auto;
 }
 
-@media screen and (max-width : 375px) {
+@media screen and (max-width: 375px) {
   .main {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    margin: 0 0 20px 0;
+    text-align: left;
+  }
+
+  h2 {
+    margin: 0 !important;
+    width: fit-content;
+  }
+
+  .main {
+    margin: 0;
+    width: 100%;
+    padding-top: 75px;
+  }
+
+  .header {
+    padding: 30px;
+    margin-bottom: 0;
+  }
+
+  .header-top {
+    margin-bottom: 50px;
+  }
+
+  .header-body {
+    display: flex;
+  }
+
+  .header-body img {
+    width: 40%;
+    margin: 0;
+  }
+
+  .header-description {
+    align-self: center;
+  }
+
+  .header-description p {
+    margin: 0 0 30px 0;
+    text-align: left;
+    font-size: 0.8rem;
+    width: 90%;
+  }
+
+  .get-started-btn {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    flex-direction: row-reverse;
+  }
+
+  .card .section-body {
+    align-self: center;
+  }
+
+  .card .section-body h2 {
+    margin-bottom: 20px !important;
+  }
+
+  .card:nth-child(2) {
+    flex-direction: row;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-1 p,
+  .section-2 p,
+  .section-3 p {
+    text-align: left;
+    width: 500px;
+  }
+
+  .section-1 img,
+  .section-2 img,
+  .section-3 img {
+    width: 27%;
+    margin: 0;
+  }
+
+  .last-section {
+    width: 60%;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .last-section h2 {
+    font-size: 1.4rem;
+    margin: 0 auto 25px auto !important;
+  }
+
+  .last-section .btn {
+    margin: 0 auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 170px;
+  }
+
+  .footer-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infos {
+    margin: 0;
+    width: 26%;
+  }
+
+  .useful-links {
+    margin: 0;
+    flex-wrap: wrap;
+    height: 150px;
+  }
+
+  .useful-links a {
+    width: 150px;
+  }
+
+  .footer-logo {
+    width: 250px;
+    height: 40px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
